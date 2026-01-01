@@ -1,4 +1,4 @@
-#include "range_slider.h"
+#include "../../include/th_common_widgets_qt/range_slider.h"
 #include <QPainter>
 #include <QWidget>
 #include <iostream>
