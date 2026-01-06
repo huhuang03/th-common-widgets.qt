@@ -1,11 +1,12 @@
 #pragma once
 
+#include "./th_common_widgets_qt_export.h"
 #include <QMouseEvent>
-#include <QPainter>
 #include <QWidget>
 
-namespace th_qt {
-class RangeSlider final : public QWidget {
+namespace th::qt {
+
+class TH_COMMON_WIDGETS_QT_API RangeSlider final : public QWidget {
   Q_OBJECT
 public:
   enum Option {
@@ -87,4 +88,4 @@ private:
   [[nodiscard]] double getLeftByValue(int value) const;
 };
 Q_DECLARE_OPERATORS_FOR_FLAGS(RangeSlider::Options)
-} // namespace th_qt
+} // namespace th::qt
