@@ -1,0 +1,8 @@
+need this
+#+BEGIN_SRC cmake
+set_target_properties(th-common-widgets-qt PROPERTIES
+    WINDOWS_EXPORT_ALL_SYMBOLS ON
+)
+#+END_SRC
+
+to let generate lib(export) in windows.
