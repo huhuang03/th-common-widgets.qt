@@ -1,16 +1,12 @@
-#include "range_slider.h"
 #include <QPainter>
-#include <QWidget>
 #include <iostream>
-
-namespace {
+#include <th_common_widgets_qt/range_slider.h>
 
 constexpr int scHandleSideLength = 11;
 constexpr int scSliderBarHeight = 5;
 constexpr int scLeftRightMargin = 1;
 
-} // namespace
-
+namespace th::qt {
 RangeSlider::RangeSlider(QWidget *aParent)
     : RangeSlider(Qt::Horizontal, DoubleHandles, aParent) {}
 
@@ -365,3 +361,4 @@ double RangeSlider::getLeftByValue(int value) const {
 }
 
 void RangeSlider::SetCanOver(bool pCanOver) { this->canOver = pCanOver; }
+} // namespace th::qt
